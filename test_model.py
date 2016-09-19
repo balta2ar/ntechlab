@@ -1,3 +1,9 @@
+"""
+This method implements basic unit tests for KDTreeModel.
+
+It also includes basic performance test and a test that compares the output
+of naive and opitmized get_nearest methods.
+"""
 from unittest import TestCase
 from random import random
 from random import randint

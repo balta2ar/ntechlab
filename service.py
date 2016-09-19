@@ -2,6 +2,9 @@
 This service allows you to retrieve closest neighbors of a given user.
 The following methods are supported:
 
+    GET /
+    Display this help message
+
     POST /user/?x=<float>&y=<float>&name=<str>&age=<int>
     Create new user
 
@@ -17,7 +20,7 @@ The following methods are supported:
     DELETE /user/
     Delete all users
 
-    POST /generate/<int>
+    POST /generate?n=<int>
     Generate N random users (for testing purposes)
 """
 from flask import Flask

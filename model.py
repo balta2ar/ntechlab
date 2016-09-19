@@ -1,3 +1,17 @@
+"""
+This module implements KDTreeModel that allows for retrieval of K nearest
+neighbors within a given radius R.
+
+KDTreeModel implements two methods to retrieve neighbors. Naive method linearly
+scans all users and computes distance from each user to current user. Users
+that are within the given radius are tracked in a heap of size K.
+
+Optimized method facilitates cKDTree from scipy to retrieve neighbors faster.
+The price for this is memory overhead of auxiliry data structures. As long
+as it is implied from the problem description that the main purpose of the
+service is to be good at retrieving neighbors, the use of the optimized method
+is recommended.
+"""
 from heapq import heappush
 from heapq import heappop
 from heapq import heappushpop
