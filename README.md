@@ -16,12 +16,12 @@ It's recommended that you use [conda](http://conda.pydata.org/miniconda.html)
 to set up your Python environment.
 
 ``` bash
+git clone https://github.com/balta2ar/ntechlab
+cd ntechlab
+
 conda create -n ntechlab python=3.5
 conda install --file=requirements.txt
 source activate ntechlab
-
-git clone https://github.com/balta2ar/ntechlab
-cd ntechlab
 ```
 
 ## Running
